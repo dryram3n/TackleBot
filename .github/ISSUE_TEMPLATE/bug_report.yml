@@ -11,7 +11,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Bug Description
+        ## 🐞 Bug Description
         A clear and concise description of what the bug is.
 
   - type: textarea
@@ -20,6 +20,7 @@ body:
       label: "Bug Description"
       description: "Explain the bug clearly."
       placeholder: "Describe what went wrong..."
+    validations:
       required: true
 
   - type: markdown
@@ -33,42 +34,42 @@ body:
     attributes:
       label: "Steps to Reproduce"
       description: "Provide the steps in order."
-      placeholder: "1. Go to '...'\n2. Click '...'\n3. Scroll down to '...'\n4. See error"
+      placeholder: |
+        1. Go to '...'
+        2. Click '...'
+        3. Scroll down to '...'
+        4. Observe the error
+    validations:
       required: true
 
   - type: markdown
     attributes:
       value: |
-        ## Expected Behavior
-        What you expected to happen.
+        ## Expected vs Actual Behavior
 
   - type: textarea
     id: expected_behavior
     attributes:
       label: "Expected Behavior"
-      description: "Describe what you expected to happen."
+      description: "What you expected to happen."
       placeholder: "It should do X..."
+    validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ## Actual Behavior
-        What actually happened.
 
   - type: textarea
     id: actual_behavior
     attributes:
       label: "Actual Behavior"
-      description: "Describe what actually happened."
+      description: "What actually happened."
       placeholder: "Instead, it did Y..."
+    validations:
       required: true
 
   - type: markdown
     attributes:
       value: |
         ## Screenshots / Error Messages
-        Add screenshots or paste error messages to explain the problem.
+        Add screenshots or paste error messages to help explain your problem.
 
   - type: textarea
     id: screenshots
@@ -80,7 +81,7 @@ body:
     attributes:
       value: |
         ## Environment Information
-        Provide details about your environment.
+        Provide details about your setup.
 
   - type: input
     id: discord_client
@@ -93,7 +94,7 @@ body:
     id: server_id
     attributes:
       label: "Server ID"
-      description: "(If bug is server-specific)"
+      description: "(If the bug is server-specific)"
       placeholder: "123456789012345678"
 
   - type: input
