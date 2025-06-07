@@ -1,0 +1,92 @@
+name: "General Questions & Support"
+description: "Ask a question or request support."
+title: "[General Q&A] "
+labels: []
+assignees:
+  - dryram3n
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Question
+        What would you like to know about TackleBot?
+
+  - type: textarea
+    id: question
+    attributes:
+      label: "Question"
+      description: "Describe your question about TackleBot."
+      placeholder: "What does this command do…?"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Category
+        What is your question about? (Check one)
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category"
+      options:
+        - "Bot setup/installation"
+        - "Command usage"
+        - "Fishing system mechanics"
+        - "Economy/upgrades"
+        - "Server configuration"
+        - "Troubleshooting"
+        - "Feature clarification"
+        - "Other"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Context
+        Please provide any relevant context or background information that might help us answer your question better.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context"
+      description: "(Optional)"
+      placeholder: "Server version, steps you've tried…"
+
+  - type: markdown
+    attributes:
+      value: |
+        ## What I've Tried
+        Have you already:
+
+  - type: checkboxes
+    id: tried_actions
+    attributes:
+      label: "What I've Tried"
+      options:
+        - label: "Checked the README documentation"
+        - label: "Used the `/help` command in Discord"
+        - label: "Searched existing issues"
+        - label: "Asked in the Discord support server"
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Additional Information
+        Any screenshots, error messages, or other details that might be helpful.
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "Additional Information"
+      description: "(Optional)"
+      placeholder: "Paste errors or add screenshots…"
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Note**: For faster responses to usage questions, consider joining our [Discord Support Server](https://discord.gg/6TxYjeQcXg) where the community can help answer common questions quickly!
