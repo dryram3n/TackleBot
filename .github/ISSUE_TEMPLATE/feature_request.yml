@@ -1,0 +1,157 @@
+name: "Feature request"
+description: "Suggest an idea or a new feature for TackleBot."
+title: "[Feature] "
+labels:
+  - enhancement
+assignees:
+  - dryram3n
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Summary
+        A clear and concise description of the feature you'd like to see added.
+
+  - type: textarea
+    id: feature_summary
+    attributes:
+      label: "Feature Summary"
+      description: "Describe the feature clearly."
+      placeholder: "I’d like TackleBot to..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Problem / Use Case
+        Is your feature request related to a problem? Please describe what problem this would solve.
+
+  - type: textarea
+    id: problem_use_case
+    attributes:
+      label: "Problem / Use Case"
+      description: "What problem does this address?"
+      placeholder: "Currently,..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Proposed Solution
+        Describe the solution you'd like to see implemented.
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: "Proposed Solution"
+      description: "How should it work?"
+      placeholder: "We could add..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Alternative Solutions
+        Describe any alternative solutions you've considered.
+
+  - type: textarea
+    id: alternative_solutions
+    attributes:
+      label: "Alternative Solutions"
+      description: "(Optional)"
+      placeholder: "An alternative might be..."
+  
+  - type: markdown
+    attributes:
+      value: "## Feature Category\nWhich part of TackleBot would this feature affect? (Check all that apply)"
+
+  - type: checkboxes
+    id: feature_category
+    attributes:
+      label: "Feature Category"
+      options:
+        - label: "Fishing System"
+        - label: "Economy/Banking"
+        - label: "Challenges/Achievements"
+        - label: "Company System"
+        - label: "Research System"
+        - label: "Pirate/Clan System"
+        - label: "Boss Battles"
+        - label: "Fun Commands"
+        - label: "Utility Commands"
+        - label: "AI Features"
+        - label: "Server Management"
+        - label: "Other (specify below)"
+  
+  - type: markdown
+    attributes:
+      value: "## Expected Impact\nHow would this feature benefit users?"
+
+  - type: checkboxes
+    id: expected_impact
+    attributes:
+      label: "Expected Impact"
+      options:
+        - label: "Quality of life improvement"
+        - label: "New gameplay mechanics"
+        - label: "Performance enhancement"
+        - label: "Accessibility improvement"
+        - label: "Community engagement"
+        - label: "Other (specify below)"
+
+  - type: markdown
+    attributes:
+      value: "## Implementation Complexity\nWhat do you think the complexity of this feature might be?"
+
+  - type: dropdown
+    id: implementation_complexity
+    attributes:
+      label: "Implementation Complexity"
+      options:
+        - "Simple (minor change/addition)"
+        - "Moderate (new command or system modification)"
+        - "Complex (major system overhaul or new major feature)"
+        - "Not sure"
+      default: 3
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Additional Context
+        Add any other context, mockups, examples from other bots, or screenshots here.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: "(Optional)"
+      placeholder: "Screenshots, links, mockups..."
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Priority
+        How important is this feature to you?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      options:
+        - "Nice to have"
+        - "Would be very useful"
+        - "Essential for my server/usage"
+      default: 0
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Note**: Feature requests are reviewed regularly, but implementation depends on complexity, demand, and development priorities.  
+        Join our [Discord Support Server](https://discord.gg/6TxYjeQcXg) to discuss ideas with the community!
