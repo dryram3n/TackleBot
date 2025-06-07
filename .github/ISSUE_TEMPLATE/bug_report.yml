@@ -1,0 +1,144 @@
+name: "Bug report"
+description: "Creates a report to help us improve TackleBot."
+title: "[BUG] "
+labels:
+  - bug
+  - invalid
+assignees:
+  - dryram3n
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Description
+        A clear and concise description of what the bug is.
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: "Bug Description"
+      description: "Explain the bug clearly."
+      placeholder: "Describe what went wrong..."
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Steps to Reproduce
+        List the steps to reproduce the behavior.
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Provide the steps in order."
+      placeholder: "1. Go to '...'\n2. Click '...'\n3. Scroll down to '...'\n4. See error"
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Expected Behavior
+        What you expected to happen.
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "Describe what you expected to happen."
+      placeholder: "It should do X..."
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Actual Behavior
+        What actually happened.
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: "Actual Behavior"
+      description: "Describe what actually happened."
+      placeholder: "Instead, it did Y..."
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Screenshots / Error Messages
+        Add screenshots or paste error messages to explain the problem.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots / Error Messages"
+      description: "(Optional) Paste screenshots or error logs."
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Environment Information
+        Provide details about your environment.
+
+  - type: input
+    id: discord_client
+    attributes:
+      label: "Discord Client"
+      description: "e.g. Desktop, Mobile, Web"
+      placeholder: "Desktop"
+
+  - type: input
+    id: server_id
+    attributes:
+      label: "Server ID"
+      description: "(If bug is server-specific)"
+      placeholder: "123456789012345678"
+
+  - type: input
+    id: command_used
+    attributes:
+      label: "Command Used"
+      description: "e.g. `/fish cast`, `/fun meme`"
+      placeholder: "/fish cast"
+
+  - type: input
+    id: time_of_occurrence
+    attributes:
+      label: "Time of Occurrence"
+      description: "Approximate time when the bug occurred"
+      placeholder: "2025-06-07 14:35 UTC"
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Additional Context
+        Any other context about the problem.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: "e.g. frequency, related commands, recent changes."
+      placeholder: "It happens every time I run `/fish cast`."
+
+  - type: markdown
+    attributes:
+      value: |
+        ## User ID (Optional)
+        Your Discord User ID (for debugging purposes):
+
+  - type: input
+    id: user_id
+    attributes:
+      label: "Discord User ID"
+      description: "(Optional)"
+      placeholder: "123456789012345678"
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Note**: Please check existing issues before submitting to avoid duplicates.  
+        For urgent issues, join our [Discord Support Server](https://discord.gg/6TxYjeQcXg).
